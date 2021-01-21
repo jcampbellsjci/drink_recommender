@@ -20,4 +20,4 @@ distinct_ingredients <- distinct_ingredients %>%
   mutate(in_bar = ifelse(ingredient %in% ingredients_we_have,
                          1, 0))
 
-write_csv(distinct_ingredients, file = "our_bar.csv")
+write_csv(distinct_ingredients, file = "data/our_bar.csv")
